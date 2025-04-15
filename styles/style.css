@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5; /* Soft Light Pink */
+    background-image: url('../assets/bow_pattern-removebg-preview.png'); /* ✅ FIXED path */
+    background-repeat: repeat;
+    background-size: 200px 200px; /* or tweak to your taste */
+}
+
+/* Header */
+header {
+    background-color: #ffccdc; /* Soft Baby Pink */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ff99b6; /* Medium Pink */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffccdc; /* Lighter Baby Pink */
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    display: none; /* Hide all sections initially */
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tweak font size for About Me for better balance */
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px; /* reduced from 18px */
+    line-height: 1.6;
+}
+
+/* New Flex container for aligning text and images */
+.about-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Keep text and images in their own columns */
+.about-text {
+    flex: 1 1 60%;
+    min-width: 300px;
+}
+
+.about-photos {
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Keep your existing about-img styles */
+.about-img {
+    background-color: transparent; /* no background */
+    border: none; /* no border */
+    padding: 0; /* no padding */
+    box-shadow: none; /* no shadow */
+    text-align: center;
+}
+
+.about-img img {
+    width: 280px;         /* increase width */
+    height: 370px;        /* increase height */
+    object-fit: cover;
+    border-radius: 50% / 40%;  /* keeps oval shape */
+    display: block;
+    margin: 0 auto;
+}
+
+.slider-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+  
+.slider {
+    display: inline-flex;
+    gap: 10px;
+}
+  
+.slider img {
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Education Section Styling */
+.education-entry {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-entry h3 {
+    color: #ff4d79; /* Soft Dark Pink */
+    border-bottom: 2px solid #ff99b9;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.education-entry p {
+    margin: 5px 0;
+}
+
+/* Skills Section Styling */
+.skills-category {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category h3 {
+    color: #ff4d79; /* Soft Dark Pink */
+    border-bottom: 2px solid #ff99b9;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-category li {
+    background: #ffebf0;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+
+/* Show the active section */
+.active-section {
+    display: block; /* Only the selected section is visible */
+}
+
+/* Profile Image */
+img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Text Processing */
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 2px solid #ff99b6;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff99b6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffccdc;
+}
+
